@@ -12,8 +12,7 @@ pool:
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
-
-steps:
+  
 - script: echo downloading git repo!
 - script: ls
   displayName: 'Run a one-line script'
