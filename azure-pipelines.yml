@@ -4,17 +4,13 @@
 # https://aka.ms/yaml
 
 trigger:
-- master
+- default
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: 'vs2017-win2016'
 
 steps:
 - script: echo Hello, world!
-  displayName: 'Run a one-line script'
-  
-- script: echo downloading git repo!
-- script: ls
   displayName: 'Run a one-line script'
 
 - script: |
