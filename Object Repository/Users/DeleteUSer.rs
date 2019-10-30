@@ -33,9 +33,9 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
 
-WS.verifyResponseStatusCode(response, 205)
+WS.verifyResponseStatusCode(response, 200)
 
-assertThat(response.getStatusCode()).isEqualTo(205)
+assertThat(response.getStatusCode()).isEqualTo(200)
 
 </verificationScript>
    <wsdlAddress></wsdlAddress>
