@@ -15,8 +15,13 @@ steps:
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
+    echo See https://aka.ms/yaml
+  displayName: 'Run a multi-line script'
+  
+- script: |
     E:
     cd E:\Katalon_GH\Katalon_Studio_Engine_Windows_64-7.0.4
     katalonc -noSplash -runMode=console -projectPath="E:\Katalon_GH\GH_API\GH_API.prj" -retry=0 -testSuitePath="Test Suites/Suite1" -executionProfile="default" -browserType="Chrome" -apiKey="6bed5db8-fbca-4b1f-a211-f3c549bb98d0"
-    echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+    
+    
